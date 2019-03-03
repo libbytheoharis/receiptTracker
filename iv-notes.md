@@ -1,4 +1,4 @@
-#Receipt Tracker - Codestravaganza
+# Receipt Tracker - Codestravaganza
 
 So that we can see how you think and build, please write a simple prototype for consuming receipts and itemizing them for a weekly expense report.  The prototype should allow for viewing a receipt on multiple screen sizes.
 
