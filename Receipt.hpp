@@ -121,7 +121,7 @@ public:
     *  @pre The caller must be a valid Employee object.
     *  @post The parameter numPassed is set as the employeeNum of the object.
     **/
-    bool setEmployee(Employee employeeSubmitted);
+    bool setEmployee(const Employee& employeeSubmitted);
 
     /**
     *  setNumber function places the integer variable passed as the employeeNum
@@ -355,18 +355,12 @@ std::string Receipt::getBusiness()
     return business;
 }
 
-bool Receipt::setEmployee(Employee employeeSubmitted)
+bool Receipt::setEmployee(const Employee& employeeSubmitted)
 {
-    bool employeeSet = (!employeeSubmitted.empty());
+    bool employeeSet = false;
 
     // enter possible string checks and error catching here.
-
-    if(employeeSet)
-    {
-        bool temp = employee.setName()
-
-
-    }
+    // Stub for now.
     return employeeSet;
 }
 
