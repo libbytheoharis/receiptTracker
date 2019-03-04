@@ -355,15 +355,25 @@ std::string Receipt::getBusiness()
     return business;
 }
 
-//bool Receipt::setEmployee(Employee employeeSubmitted)
-//{
-//
-//}
-//
-//Employee Receipt::getEmployee()
-//{
-//
-//}
+bool Receipt::setEmployee(Employee employeeSubmitted)
+{
+    bool employeeSet = (!employeeSubmitted.empty());
+
+    // enter possible string checks and error catching here.
+
+    if(employeeSet)
+    {
+        bool temp = employee.setName()
+
+
+    }
+    return employeeSet;
+}
+
+Employee Receipt::getEmployee()
+{
+
+}
 
 
 //bool Receipt::setImage(ReceiptImage imageSubmitted)

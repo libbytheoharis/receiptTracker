@@ -1,5 +1,6 @@
-# receiptTracker
-Consumes receipts on behalf of employees for a weekly expense report.
+# Receipt Tracker
+
+Keeps track of each employee's expense receipts for a weekly expense report. 
 
 ## About
 
@@ -16,11 +17,9 @@ Within the program is an option for the user to see the each feature being teste
 
 The 
 
-Add opencv if not already installed on your local machine. 
-* [How to install opencv](https://docs.opencv.org/master/df/d65/tutorial_table_of_content_introduction.html) - How to install opencv.
-
+Add opencv if not
 ```
-Run the source code in your IDE.
+put the command to add here
 ```
 
 
@@ -32,4 +31,5 @@ Run the source code in your IDE.
 
 ### Libby Wichman
 
-  
+
+
