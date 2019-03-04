@@ -2,7 +2,6 @@
 
 # Receipt Tracker
 
-======
 
  
 
@@ -106,7 +105,7 @@ Below lists what would be available for Menu item 1. Enter Receipt(s).
 
  
 
-Note: The requirements which are not yet available are in italics. **
+Note: The requirements which are not yet available are in italics. 
 
  
 
