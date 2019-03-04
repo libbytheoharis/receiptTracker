@@ -10,8 +10,9 @@ The information is then pushed
 
 ### Prerequisites
 
-You will need to add and install opencv on your local machine. This is explained below.
 Within the program is an option for the user to see the each feature being tested. The source of the test images used is the "testImage" folder located * [testImage](https://github.com/libbywichman?tab=repositories) - here.
+
+Since the actual image reader is not yet working, you will not need opencv added to your local machine. 
 
 ### Step By Step
 
@@ -22,7 +23,8 @@ Add opencv if not
 put the command to add here
 ```
 
-
+I discovered I needed to give myself a couple more days to figure out how to integrate libraries that allow the recognition of text within images. 
+Ideas centered around this were from * [OpenCV](https://docs.opencv.org/master/index.html) and a * [Document Scanner](https://developer.ibm.com/tutorials/document-scanner/). 
 
 ## Deployment
 
