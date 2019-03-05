@@ -72,169 +72,139 @@ public:
     bool setTotal(double receiptTotal);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getTotal returns the double value representing the total amount of the
+    *  receipt.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @pre The caller must be a valid Receipt object.
+    *  @return A double value that is the total amount of the receipt.
     **/
     double getTotal();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  setBusiness assigns the value passed the the paramenter busName to the
+    *  name of the business where the receipt was received.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param busName A string value that is the name of the company where the
+    *       receipt was received.
+    *  @pre The caller must be a valid Receipt object.
+    *  @post The parameter busName is set as the business member variable
+    *       of the object.
     **/
     bool setBusiness(std::string busName);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getBusiness returns the business member variable of the Receipt class.
+    *  This is the business name of receipt.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @pre The caller must be a valid Receipt object.
+    *  @return The string value of the business member variable.
     **/
     std::string getBusiness();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  setEmployee allows for the passing of an Employee object that associates
+    *  the Receipt to a specific, already constructed Employee object.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param employeeSubmitted An already constructed employee object that
+    *       has already been through verification.
+    *  @pre The caller must be a valid Receipt object.
+    *  @post A boolean value. True if returned if the Employee was set
+    *       successfully. False if the Employee object was not set successfully.
     **/
     bool setEmployee(const Employee& employeeSubmitted);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getEmployee displays the information of the associated employee member
+    *  variable.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @pre The caller must be a valid Receipt object.
+    *  @return An employee object.
     **/
     Employee getEmployee();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  setImage
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param
+    *  @pre
+    *  @post
     **/
 //    bool setImage(ReceiptImage imageSubmitted);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getImage
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param
+    *  @pre
+    *  @post
     **/
 //    ReceiptImage getImage();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  setImageLocation passes the parameter filePath to the Receipt object's
+    *  imageLocation.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param filePath A string variable that represents the file path of the
+    *       receipt image's location.
+    *  @pre The caller must be a valid Receipt object.
+    *  @post The parameter filePath is set as the imageLocation of the object.
     **/
     bool setImageLocation(std::string filePath);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getImageLocation returns the Receipt's member variable, imageLocation.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @pre The caller must be a valid Receipt object.
+    *  @return The string value returned is the filepath of where the image
+    *       orginated.
     **/
     std::string getImageLocation();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  getNumberOfItems returns the number of items in the receiptItems array.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @pre The caller must be a valid Receipt object.
+    *  @return The integer returned is the total number of items listed on the
+    *       receipt.
     **/
     int getNumberOfItems();
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  addItem adds an item to the receiptItems array. Duplicate items can be
+    *  added to the array.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param itemName A string variable that represents an item on the receipt.
+    *  @pre The caller must be a valid Receipt object.
+    *  @post The array has one more item and the itemCount is incremented by
+    *       one.
+    *  @return A boolean value is returned. If true, the item was successfully
+    *       added. If false, the item was not added to the array.
     **/
     bool addItem(std::string itemName);
 
     /**
-    *  setNumber function places the integer variable passed as the employeeNum
-    *  of the Employee object. A bool value is returned. True means that the
-    *  employeeNum was set successfully. False is returned if the employeeNum
-    *  was not set successfully.
+    *  The removeItem function removes the matching item from the receiptItems
+    *  array, if the item is found.
     *
-    *  @param A 5 digit integer value that represents the employee's number.
-    *       Must be greater than 0 and less than 99999.
-    *  @pre The caller must be a valid Employee object.
-    *  @post The parameter numPassed is set as the employeeNum of the object.
+    *  @param itemName A string variable that represents an item on the receipt.
+    *  @pre The caller must be a valid Receipt object
+    *  @post The array has one less item and the itemCount is decremented by
+    *       one.
+    *  @return A boolean value is returned. If true, the item was removed
+    *  successfully. If false, the item was not removed from the array.
     **/
     bool removeItem(std::string itemName);
 
     /**
-    *  The removeItemNum function removes the nth item from the receiptItem
+    *  The removeItemNum function removes the nth item from the receiptItems
     *  array, where nth is the interger parameter passed.
     *
     *  @param itemPlacement Must be a positive integer and must be less than
     *           itemCount.
     *  @pre The caller must be a valid Receopt object.
-    *  @post A boolean value is returned. If true, the item was removed
+    *  @post The array has one less item and the itemCount is decremented by
+    *       one.
+    *  @return A boolean value is returned. If true, the item was removed
     *  successfully. If false, the item was not removed from the array.
     **/
     bool removeItemNum(int itemPlacement);
@@ -366,7 +336,7 @@ bool Receipt::setEmployee(const Employee& employeeSubmitted)
 
 Employee Receipt::getEmployee()
 {
-
+    // Stub for now.
 }
 
 
@@ -389,8 +359,7 @@ bool Receipt::setImageLocation(std::string filePath)
 
     if(filePathAdded)
     {
-        // Need to find out how to check the file path here.
-
+        imageLocation = filePath;
     }
     return filePathAdded;
 }
@@ -448,7 +417,7 @@ void Receipt::clearItems()
 void Receipt::display()
 {
     char userInput = 'N';
-    std::cout << "Employee Info... " << std::endl;
+    std::cout << "Employee Info is below." << std::endl;
     employee.display();
     std::cout << "Date of obj: " << getDate() << std::endl;
     std::cout << "Business Name: " << getBusiness() << std::endl;
@@ -470,15 +439,16 @@ bool receiptTester()
     Receipt receipt1;
     std::cout << "receipt1 created using the default constructor." << std::endl;
     receipt1.display();
+    std::cout << std::endl;
+    receipt1.setDate("20190301");
+    receipt1.setBusiness("Quick Trip");
+    receipt1.setTotal(24.29);
+    receipt1.setImageLocation("/home/libbywichman/Documents/receipts");
 
-
-
- //   bool setTotal(double receiptTotal);
-
-//
-//    bool setDate(std::string dateOfReceipt);
-//
-//    std::string getDate();
-
-    return false;
+    std::cout << std::endl << "TESTING for Receipt Class" << std::endl;
+    std::cout << "Test for receipt1 using new values." << std:: endl;
+    receipt1.display();
+    std::cout << std::endl;
+    std::cout << "Testing completed successfully. Should be true (1): ";
+    return true;
 }

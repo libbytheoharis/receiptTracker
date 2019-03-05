@@ -26,7 +26,7 @@ public:
     // Add other construnctors if you have time.
     ~ReceiptImage();
 
-    void friend testReceiptImage();
+    bool friend testReceiptImage();
     bool setImage(std::string filePathPassed);
 
 };
@@ -53,7 +53,9 @@ ReceiptImage::~ReceiptImage()
 {
 } // end destructor.
 
-void testReceiptImage()
+bool testReceiptImage()
 {
+    std::cout << std::endl << "Underconstrunction. " << std::endl << std::endl;
 
+    return false;
 }

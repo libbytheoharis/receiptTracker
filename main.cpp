@@ -7,10 +7,6 @@
 #include "Receipt.hpp"
 #include "ReceiptImage.hpp"
 
-
-
-
-
 int main()
 {
     bool readyToExit = false;
@@ -29,28 +25,35 @@ int main()
         std::cin.ignore();
         if(userInput == 1)
         {
-            std::cout << "Underconstrunction. Returning to main menu."
-                << std::endl << std::endl;
+            std::cout << std::endl
+                << "Underconstrunction. Returning to main menu." << std::endl
+                << std::endl;
+                userInput = 0;
         }
         else if(userInput == 2)
         {
             char usrTesting;
-            std::cout << "Press any key to test the Employee Class.";
+            std::cout << std::endl
+                << "Press any key and then ENTER to test the Employee Class. ";
             std::cin >> usrTesting;
             std::cin.ignore();
-            std::cout << testForEmployee() << std::endl;
-            std::cout << "Press any key to test the Receipt Class.";
+            std::cout << "Result: " << testForEmployee() << std::endl;
+            std::cout << std::endl
+                << "Press any key and then ENTER to test the Receipt Class. ";
             std::cin >> usrTesting;
             std::cin.ignore();
-            std::cout << receiptTester() << std::endl;
-            std::cout << "Press any key to test the ReceiptImage Class.";
+            std::cout << "Result: " << receiptTester() << std::endl;
+            std::cout << std::endl
+                << "Press any key and then ENTER to test the ReceiptImage Class. ";
             std::cin >> usrTesting;
             std::cin.ignore();
+            std::cout << testReceiptImage() << std::endl;
         }
         else if(userInput == 3)
         {
-            std::cout << "Underconstruction Returning to main menu."
-                << std::endl << std::endl;
+            std::cout << std::endl
+                << "Underconstruction Returning to main menu." << std::endl
+                << std::endl;
             userInput = 0;
         }
         else if(userInput == 4)
