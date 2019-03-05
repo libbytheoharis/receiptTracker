@@ -55,11 +55,9 @@ All non-functioning calls will return dummy values, which are all notated in the
 
  
 
-### Prerequisites
+### How to Run
 
- 
-
-* Written with Code::Blocks, but can be run on most IDEs.
+The program was written with Code::Blocks, but can be run on most IDEs.
 
 * Although the ReceiptImage class has some additional include headers...Since the actual image reader is not yet working, you will not need opencv or tesseract added to your local machine.
 
@@ -67,19 +65,13 @@ All non-functioning calls will return dummy values, which are all notated in the
 
 ### Running Receipt Tracker
 
- 
-
 Within the program is option "2. Testing", which gives the user a view of the simple prototype version that shows most of the features being tested.
-
- 
 
  
 
 Built based on the following "requirement ideas": 
 
-* Menu that allows the user to navigate between four options.
-
-Below lists what would be available for Menu item 1. Enter Receipt(s).
+* Menu that allows the user to navigate between options.
 
 * User identifies individual tied to the receipt to be submitted.
 
@@ -117,35 +109,22 @@ Ideas centered around this were from * [OpenCV](https://docs.opencv.org/master/i
 
 ## Deployment
 
- 
+Deployment is VERY limited with the current C++ version of the program.
+Each individual user would need to run the program from their local machine.
+This would be problematic in at least a couple ways:
+- Users would need to get a copy of the source code and run it themselves. This would be complicated for some non-technical users.
+- Current input in the program is limited to the console. This can be frustrating for those not used to dealing in a text based environments.
+- The user support needed to implement the program would be impractical.
+
+
+I believe Receipt Tracker would be better suited to JavaScript and/or Python combination. 
+There could be a company wide accessible website built for the user input portion and it could make and receive calls to either a database or to a file for later insertion into a database.
+JavaScript would allow a more user friend interface, presentation and accessibility. Python could be utilized for the parsing of the image for the text.
+
 
 Generally, I aim to match the programming language to the program requested.
 
 Since this is a time restricted exercise, I chose to code in C++, which is the programming language with which I feel most comfortable. This prevented me from getting too bogged down in the syntax and language specific issues.
-
- 
-
-Deployment is VERY limited with the current C++ version of the program.
-
-Each individual user would need to run the program from their local machine.
-
-This would be problematic in a couple ways:
-
-- Users would need to get a copy of the source code and run it themselves. This would be complicated for some non-technical users.
-
-- Current input in the program is limited to the console. This can be frustrating for those not used to dealing in a text based environments.
-
-- Many other issues will probably pop up with the current version.
-
- 
-
-I believe Receipt Tracker would be better suited to JavaScript and/or Python.
-
-JavaScript would allow a more user friend interface, presentation and accessibility. Python could be utilized for the parsing of the image for the text.
-
- 
-
-An company wide accessible website which could make and receive calls to either a database or to a file for later insertion into a database would be ideal.
 
  
 
